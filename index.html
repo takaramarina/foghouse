@@ -8,22 +8,66 @@
       * {
         box-sizing: border-box;
       }
-      
+
       .header {
         color: rgb(162, 242, 154);
         font-size: 60px;
         background-color: gray;
         border-radius: 30px;
-        
+
       }
+
       .sub {
         color: white;
         font-size: 20px;
       }
+
       body {
         color: gray;
         font-family: "Courier New", monospace;
         text-align: center;
+        margin-left: 30px;
+        margin-right: 30px;
+      }
+
+      .grade-table {
+        border-collapse: collapse;
+        margin: 25px 0;
+        min-width: 200px;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 0 0px 4px rgb(162, 242, 154);
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .anime-table {
+        min-width: 500px;
+        margin: 5px 0;
+        margin-left: 0;
+        margin-right: 0;
+      }
+			
+      img {
+        width: 400px;
+      }
+      .grade-table th,
+      .grade-table td {
+        padding: 12px 15px;
+        text-align: center;
+      }
+
+      .grade-table tbody tr:not(:last-of-type) {
+        border-bottom: 2px solid rgb(162, 242, 154);
+      }
+
+      .sticky-header {
+        position: sticky;
+        top: 20px;
+        background-color: rgb(162, 242, 154);
+        color: black;
+        text-shadow: 2px 2px 2px white;
+        border-radius: 30px;
       }
     </style>
   </head>
@@ -36,15 +80,118 @@
       </div>
     </div>
     <br>
-    During autumn of 2022, I took the class 
-    Surveillance Aesthetics: 
-    Provocations About Privacy and Security in the 
+    During autumn of 2022, I was chosen to be a part of
+    Surveillance Aesthetics:
+    Provocations About Privacy and Security in the
     Digital Age, a class co-listed with the University
-    of Chicago and the School of the Art Institute of 
+    of Chicago and the School of the Art Institute of
     Chicago. As a group of artists and computer scientists,
     we explored the ways our privacy is being treated
     through the technologies we use in our daily lives,
     brainstorming ways to convey this message of digital
-    concern through various mediums. br
+    concern through various mediums. <br> <br>
+    For my final project, I explored the false sense
+    of privacy we feel in our own homes
+    despite the amount of gadgets and devices nearby
+    that could easily be used to track our data.
+    Using a combination of visual and auditory input from
+    webcams, I synthesized outputs in a space meant to
+    confuse but also protect.
+    <br> <br>
+    <iframe width="320" height="560" src="https://www.youtube.com/embed/y5HE2mkbQ3c" title="Surveillance Aesthetics: Fog Greenhouse" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <br> *a video demonstration of the
+    audio visualization feature*
+    <br><br>
+    <table class="anime-table grade-table">
+      <thead>
+        <tr>
+          <th class="sticky-header">Components</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Greenhouse
+          </td>
+          <td>The striking 6x8 ft greenhouse
+            captures the familiar silhouette of a home, a space
+            we often associate with privacy and security.
+          </td>
+        </tr>
+        <tr>
+          <td>Webcams
+          </td>
+          <td>Unfortunately, we are not as secure in our own homes
+            as we might like to think. A wide variety of data is
+            available about us regardless of where we are, such as
+            auditory data from smart home devices, location data
+            from our phones, and browser data from our computers.
+            To emphasize this point, I added two webcams inside of
+            the greenhouse, one to capture auditory input and the
+            other for visual input. Together, these devices
+            provided the data necessary to create my two visualizations.
+          </td>
+        </tr>
+        <tr>
+          <td>Fog
+          </td>
+          <td>To further emphasize the illusion of safety,
+            I filled the interior of the greenhouse
+            with fog, seemingly blocking any potential surveillance
+            from occuring inside of the home.
+            The fog, symbolizing our false sense of
+            security, is detrimental in actually keeping us safe,
+            blinding our eyes to potential sources of security breaches.
+            The participants are unaware of the webcams due to the
+            reduced visibility, not realizing that their own movements
+            and actions are the data input for the visualizations until
+            an explanation is given.
+          </td>
+        </tr>
+        <tr>
+          <td>Auditory Data
+          </td>
+          <td>With the auditory input from the hidden webcam,
+            I coded a green eye that was projected onto
+            the side of the greenhouse. Unknown to the participant,
+            this eye reacted to the noise levels inside of the
+            greenhouse, widening with higher decibels.
+          </td>
+        </tr>
+        <tr>
+          <td>Visual Data
+          </td>
+          <td>As visibilty is initially impaired inside of the greenhouse,
+            the visual data is actually the second step in
+            the surveillance of the participant. After a while,
+            when much of the fog has cleared out, it should be
+            apparent to the participant that the green eye is
+            reacting to their sounds. However, they are not yet
+            aware that a secondary form of surveillance is about
+            to begin, this one taking their visual data, stylizing
+            it, and projecting it onto the back wall of the greenhouse.
+            To abstract the output, I used TouchDesigner to isolate
+            the edges from the video input, emphasizing them and
+            filling in the empty areas with jagged lines to create
+            a barely recognizable live feed of the participants.
+            This is a warning to continuously stay vigilant to
+            various forms of surveillance.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br><br>
+		With more time and resources, I would have loved to
+    implement more forms of surveillance, such as 
+    ultrasonic sensors, infrared cameras, and pressure 
+    sensors on the floor. 
+    <br><br>
+		Much thanks to the Media Arts, Data, and Design center
+    at the University of Chicago for graciously hosting
+    our project, and to my instructors, classmates, and 
+    friends for helping me with this process. <br><br>
+    <img src="2022_12_09_15_43_IMG_1940.JPG" alt="greenhouse">
+		<img src="2022_12_09_15_44_IMG_1942.JPG" alt="greenhouse">
   </body>
 </html>
